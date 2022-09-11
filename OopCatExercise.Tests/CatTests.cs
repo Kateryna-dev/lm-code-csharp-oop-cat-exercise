@@ -1,5 +1,6 @@
 ﻿using NUnit.Framework;
 using FluentAssertions;
+using System.Linq;
 
 namespace OopCatExercise.Tests;
 
@@ -68,6 +69,7 @@ public class CatTests
     public void DomesticCat_Should_Make_A_Sound_When_Eat_Is_Called()
     {
         DomesticCat domesticCat = new();
-        domesticCat.Eat().Should().Be("Purrrrrrr");
+        string[] options = new string[] { "Purrrrrrr", "It will do I suppose" };
+        options.Contains(domesticCat.Eat()).Should().Be(true);
     }
 }
