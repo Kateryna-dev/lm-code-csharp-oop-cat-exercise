@@ -2,11 +2,8 @@
 {
     public class LionCat:Cat
     {
-        public LionCat() 
+        public LionCat() : base (1100, "wild")
         {
-            this.IsAsleep = false;
-            this.Setting = "wild";
-            this.AverageHeight = 1100;
         }
         public override string Eat() => "Roar!!!!";
     }

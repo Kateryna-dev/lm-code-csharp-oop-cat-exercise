@@ -2,10 +2,8 @@
 {
     public class CheetahCat: Cat
     {
-        public CheetahCat() 
+        public CheetahCat() : base(50, "wild")
         {
-            this.IsAsleep = false;
-            this.Setting = "wild";
         }
         public override string Eat() => "Zzzzzzz";
     }

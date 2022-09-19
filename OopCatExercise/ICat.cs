@@ -1,7 +1,6 @@
-﻿using System;
-namespace OopCatExercise
+﻿namespace OopCatExercise
 {
-	public interface ICat
+    public interface ICat
 	{
 		void GoToSleep();
 		void WakeUp();
